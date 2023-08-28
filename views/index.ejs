@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+
+    <div class="data">
+        <p class="p">Location:<%= sendData.location %></p>
+        <p class="p">Temperature:<%= sendData.temp %>&deg Celsius</p>
+        <p class="p">Description:<%= sendData.description %></p>
+    </div>
+
+    <form class="form" action="/" method="post"> 
+    
+        <label class="label" for="cityInput">city name</label>
+        <input class="input" type="text" name="cityName">
+        <button class="button"  type="submit">click</button>
+    
+    </form>
+
+
+
+
+
+
+</body>
+</html>
